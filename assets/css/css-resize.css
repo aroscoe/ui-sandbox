@@ -1,0 +1,22 @@
+#nav, #main {
+    height: 300px;
+}
+#nav {
+    float: left;
+    margin-right: 20px; /* Must be the same as #content padding */
+    width: 200px;
+    max-width: 800px;
+    overflow: auto;
+    resize: horizontal;
+    background: #82c33c;
+    border-right: 1px solid #000;
+}
+#main {
+    width: 100%;
+    background: #47b8ff;
+}
+
+#content {
+    padding: 20px; /* Must be the same as #nav margin-right */
+    background: #ceecff;
+}

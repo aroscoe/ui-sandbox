@@ -1,0 +1,59 @@
+/* SCREEN **************************************************/
+html, body, #document {
+    height: 100%;
+}
+
+
+/* Navigation
+------------------------------------------------ */
+#nav {
+    position: relative;
+    float: left;
+    width: 147px;
+    height: 100%;
+    background: #f1fae3;
+/*    border-right: 1px solid #b4b4b4;*/
+/*    overflow: auto;*/
+}
+
+#nav .content {
+    width: 146px;
+    height: 100%;
+/*    background: red;*/
+    overflow: auto;
+}
+
+#nav .ui-resizable-handle.ui-resizable-e {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 4px;
+    height: 100%;
+    background: transparent;
+    border-right: 1px solid #b4b4b4;
+}
+
+
+/* Main
+------------------------------------------------ */
+#main {
+    position: relative;
+    float: left;
+    width: 600px;
+    padding: 20px;
+    background: red;
+}
+
+#main .content {
+}
+
+/* Footer
+------------------------------------------------ */
+#footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 33px;
+    background: #b5b5b5 url("../img/footer_bg.png") repeat-x;
+    border-top: 1px solid #787878;
+}

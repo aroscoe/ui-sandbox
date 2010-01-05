@@ -1,0 +1,35 @@
+.shadow {
+  -webkit-box-shadow: 3px 3px 5px #888;
+}
+
+
+.dialog-box {
+  margin: 0;
+  padding: 0;
+  -webkit-border-radius: 10px;
+  background-color: purple;
+}
+
+.dialog-box .field-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.dialog-box .field-description {
+  margin: 0;
+  padding: 0;
+}
+
+.dialog-box .field-buttons {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+  list-style: none;
+}
+
+.dialog-box .field-buttons li {
+  display: inline-block;
+}
+
+

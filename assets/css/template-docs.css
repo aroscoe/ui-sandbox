@@ -1,0 +1,13 @@
+body {
+}
+
+#template-container, .test {
+  margin: 0 auto;
+  padding: 10px;
+
+  width: 400px;
+
+  border: 5px solid #eee;
+  outline: 1px dashed #333;
+}
+

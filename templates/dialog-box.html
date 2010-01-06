@@ -15,6 +15,12 @@
         $(self).widgetField('buttons').find('a').click(function() {
           alert('Cancel clicked!');
         });
+
+        $(self).widgetField('buttons').append("<li></li>").find('li:last').widgetLoad('button', {title: 'Other Button'}, function(button) {
+          button.click(function() {
+            alert("Third button clicked");
+          });
+        })
       });
     }
 
@@ -37,6 +43,7 @@
   <div id="documentation">
     <h1>dialog-box</h1>
 
+    <h2>Fields</h2>
     <dl>
       <dt>title</dt>
       <dd>Title of the dialog box</dd>

@@ -4,9 +4,22 @@ header, footer, nav, section {
 
 /* Frame
 ------------------------------------------------ */
-nav, section#body {
-    height: 300px;
+header, footer {
+    height: 40px;
+    background: #ccc;
 }
+header {
+    border-bottom: 1px solid #000;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    border-top: 1px solid #000;
+}
+/*nav, section#body {
+    height: 300px;
+}*/
 nav {
     float: left;
     margin-right: 20px; /* Must be the same as #content padding */

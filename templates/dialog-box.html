@@ -8,11 +8,11 @@
   <script src="../assets/js/widgets.js"></script>
   <script>
     function test() {
-      $('#test').loadWidget('dialog-box', {title: 'Hi', description: 'This is a dialog box'}, function(self) {
-        $(self).findWidgetField('buttons').find('button').click(function() {
+      $('#test').widgetLoad('dialog-box', {title: 'Hi', description: 'This is a dialog box'}, function(self) {
+        $(self).widgetField('buttons').find('button').click(function() {
           alert('Ok clicked!');
         });
-        $(self).findWidgetField('buttons').find('a').click(function() {
+        $(self).widgetField('buttons').find('a').click(function() {
           alert('Cancel clicked!');
         });
       });

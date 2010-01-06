@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Widget</title>
+  <link type="text/css" rel="stylesheet" href="dialog-box.css" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/widget-docs.css" />
+  <script src="../assets/js/jquery-1.3.2.min.js"></script>
+  <script src="../assets/js/widget.js"></script>
+  <script>
+    function test() {
+      $('#test').widgetLoad('button', {title: 'Hi'}, function(self) {
+        $(self).click(function() {
+          alert('Clicked!');
+        });
+      });
+    }
+
+    $(function() {
+      $('pre').text("    " + test);
+    });
+  </script>
+</head>
+<body>
+  <div id="widget-container">
+    <button class="button"><span class="field-title">Button Text</span></button>
+  </div>
+  <div id="documentation">
+    <h1>button</h1>
+
+    <h2>Fields</h2>
+    <dl>
+      <dt>title</dt>
+      <dd>Title of the button</dd>
+    </dl>
+
+    <h2>Try it</h2>
+    <pre></pre>
+    <div id="test" class="test"></div>
+    <button onclick="test(); return false;">Go</button>
+  </div>
+</body>
+</html>
+

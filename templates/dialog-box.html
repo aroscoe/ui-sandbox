@@ -1,19 +1,19 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!doctype html>
 <html lang="en">
 <head>
-  <title>Template</title>
+  <title>Widget</title>
   <link type="text/css" rel="stylesheet" href="dialog-box.css" />
-  <link type="text/css" rel="stylesheet" href="../assets/css/template-docs.css" />
+  <link type="text/css" rel="stylesheet" href="../assets/css/widget-docs.css" />
   <script src="../assets/js/jquery-1.3.2.min.js"></script>
-  <script src="../assets/js/templates.js"></script>
+  <script src="../assets/js/widgets.js"></script>
   <script>
     function test() {
-      $('#test').loadTemplate('dialog-box', {title: 'Hi', description: 'This is a dialog box'}, function(self) {
-        $(self).findTemplateField('buttons').find('button').click(function() {
+      $('#test').loadWidget('dialog-box', {title: 'Hi', description: 'This is a dialog box'}, function(self) {
+        $(self).findWidgetField('buttons').find('button').click(function() {
           alert('Ok clicked!');
         });
-        $(self).findTemplateField('buttons').find('a').click(function() {
-          alert('Cancel clicked!'); 
+        $(self).findWidgetField('buttons').find('a').click(function() {
+          alert('Cancel clicked!');
         });
       });
     }
@@ -24,7 +24,7 @@
   </script>
 </head>
 <body>
-  <div id="template-container">
+  <div id="widget-container">
     <div class="dialog-box shadow">
       <h1 class="field-title">Default title</h1>
       <p class="field-description">Default dialog box description</p>
@@ -53,3 +53,4 @@
   </div>
 </body>
 </html>
+
